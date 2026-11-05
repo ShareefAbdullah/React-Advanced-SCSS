@@ -1,0 +1,23 @@
+$bgColor-first: darkorange;
+$bgColor-second: black;
+$bgColor-third: darkred;
+$margin-blocks: 0 0 20px 0;
+
+.block {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  margin: $margin-blocks;
+}
+
+.first {
+  background-color: $bgColor-first;
+}
+
+.second {
+  background-color: $bgColor-second;
+}
+
+.third {
+  background-color: $bgColor-third;
+}
