@@ -1,23 +1,31 @@
-$bgColor-first: darkorange;
-$bgColor-second: black;
-$bgColor-third: darkred;
-$margin-blocks: 0 0 20px 0;
+// variables
+$m-center: 100px auto;
+$bg-color: #c2c2c2;
+$padding: 20px;
 
-.block {
-  width: 200px;
-  height: 200px;
-  text-align: center;
-  margin: $margin-blocks;
-}
+//styles
+.centered-block {
+  width: 500px;
+  margin: $m-center;
+  background-color: $bg-color;
+  padding: $padding;
+  border-radius: 20px;
 
-.first {
-  background-color: $bgColor-first;
-}
+  ul {
+    list-style: none;
 
-.second {
-  background-color: $bgColor-second;
-}
+    li {
+      color: darkred;
 
-.third {
-  background-color: $bgColor-third;
+      a {
+        text-decoration: none;
+        color: darkgreen;
+      }
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: slategrey;
+  }
 }

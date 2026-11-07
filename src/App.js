@@ -1,9 +1,18 @@
 function App() {
   return (
     <div className="App">
-      <div className="block first">1</div>
-      <div className="block second">2</div>
-      <div className="block third">3</div>
+      <div className="centered-block">
+        <ul>
+          <li>
+            <a href="#">First</a>
+          </li>
+          <li>Second</li>
+          <li>Third</li>
+          <li>Fourth</li>
+          <li>Fifth</li>
+        </ul>
+        <a href="#">Empty link</a>
+      </div>
     </div>
   );
 }
