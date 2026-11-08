@@ -2,6 +2,15 @@
 $m-center: 100px auto;
 $bg-color: #c2c2c2;
 $padding: 20px;
+$my-font-size: 1.1em;
+
+//mixins
+@mixin font($color, $font-weight) {
+  font-size: $my-font-size;
+  font-weight: $font-weight;
+  color: $color;
+  font-family: Arial, sans-serif;
+}
 
 //styles
 .centered-block {
@@ -19,13 +28,13 @@ $padding: 20px;
 
       a {
         text-decoration: none;
-        color: darkgreen;
+        @include font(gold, bold);
       }
     }
   }
 
   a {
     text-decoration: none;
-    color: slategrey;
+    @include font(cadetBlue, 600);
   }
 }
