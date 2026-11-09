@@ -1,15 +1,8 @@
-// variables
-$m-center: 100px auto;
-$bg-color: #c2c2c2;
-$padding: 20px;
-$my-font-size: 1.1em;
+@import "variables";
+@import "mixins";
 
-//mixins
-@mixin font($color, $font-weight) {
-  font-size: $my-font-size;
-  font-weight: $font-weight;
-  color: $color;
-  font-family: Arial, sans-serif;
+a {
+  @include fontB();
 }
 
 //styles
@@ -27,14 +20,14 @@ $my-font-size: 1.1em;
       color: darkred;
 
       a {
-        text-decoration: none;
         @include font(gold, bold);
+        @include fontB($link: gold);
       }
     }
   }
 
   a {
-    text-decoration: none;
     @include font(cadetBlue, 600);
+    @include fontB($link: cadetBlue);
   }
 }

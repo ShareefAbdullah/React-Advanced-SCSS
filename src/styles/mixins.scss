@@ -1,0 +1,19 @@
+@import "variables";
+
+@mixin font($color: purple, $font-weight) {
+  font-size: $my-font-size;
+  font-weight: $font-weight;
+  color: $color;
+  font-family: Arial, sans-serif;
+}
+
+@mixin fontB($link: blue, $hover: green, $active: black) {
+  color: $link;
+  text-decoration: none;
+  &:hover {
+    color: $hover;
+  }
+  &:active {
+    color: $active;
+  }
+}

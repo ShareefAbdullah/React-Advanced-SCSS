@@ -1,6 +1,7 @@
 function App() {
   return (
     <div className="App">
+      <a href="#">Empty link one</a>
       <div className="centered-block">
         <ul>
           <li>
@@ -11,7 +12,7 @@ function App() {
           <li>Fourth</li>
           <li>Fifth</li>
         </ul>
-        <a href="#">Empty link</a>
+        <a href="#">Empty link two</a>
       </div>
     </div>
   );
