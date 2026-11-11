@@ -1,19 +1,31 @@
 @import "variables";
 
-@mixin font($color: purple, $font-weight) {
+@mixin font($font-weight, $color: purple) {
   font-size: $my-font-size;
   font-weight: $font-weight;
-  color: $color;
+  color: darken($color, 10%);
   font-family: Arial, sans-serif;
 }
 
-@mixin fontB($link: blue, $hover: green, $active: black) {
-  color: $link;
+@mixin fontB($hover: green, $active: black) {
   text-decoration: none;
   &:hover {
-    color: $hover;
+    color: lighten($hover, 10%);
   }
   &:active {
     color: $active;
+  }
+}
+
+@mixin grid($cols, $margin) {
+  float: left;
+  background-color: #c2c2c2;
+  margin-right: $margin;
+  margin-bottom: $margin;
+  height: 150px;
+  width: ((100% - ($cols - 1) * $margin) / $cols);
+
+  &:nth-child(#{$cols}n) {
+    margin-right: 0;
   }
 }

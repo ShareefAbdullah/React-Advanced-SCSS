@@ -6,7 +6,7 @@ a {
 }
 
 //styles
-.centered-block {
+.centeredBlock {
   width: 500px;
   margin: $m-center;
   background-color: $bg-color;
@@ -20,14 +20,14 @@ a {
       color: darkred;
 
       a {
-        @include font(gold, bold);
-        @include fontB($link: gold);
+        @include font(bold, gold);
+        @include fontB();
       }
     }
   }
 
   a {
-    @include font(cadetBlue, 600);
-    @include fontB($link: cadetBlue);
+    @include font(600, cadetBlue);
+    @include fontB();
   }
 }
